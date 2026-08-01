@@ -6,13 +6,14 @@
     <meta name="description" content="{{ .Description | default site.Params.description }}">
     <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/chroma.css" | relURL }}">
+    {{ $styles := slice (resources.Get "css/styles.css") (resources.Get "css/chroma.css") | resources.Concat "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
   </head>
   <body>
     {{ partial "header.html" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer.html" . }}
-    <script src="{{ "js/menu.js" | relURL }}"></script>
+    {{ $menuScript := resources.Get "js/menu.js" | minify | fingerprint }}
+    <script src="{{ $menuScript.RelPermalink }}" integrity="{{ $menuScript.Data.Integrity }}" crossorigin="anonymous"></script>
   </body>
 </html>

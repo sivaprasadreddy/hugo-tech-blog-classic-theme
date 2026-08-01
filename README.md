@@ -1,5 +1,7 @@
 # Hugo Tech Blog Classic Theme
 
+[Demo](https://sivaprasadreddy.github.io/hugo-tech-blog-classic-theme/)
+
 ## Features
 
 - Clean simple design
