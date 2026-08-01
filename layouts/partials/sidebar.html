@@ -1,0 +1,21 @@
+<aside class="sidebar">
+  <section class="sidebar-card">
+    <h2>Search</h2>
+    <form class="search-form" action="{{ site.Home.RelPermalink }}" method="get">
+      <input type="search" name="q" placeholder="Search..." aria-label="Search">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  <section class="sidebar-card">
+    <h2>Categories</h2>
+    <ul class="category-list">
+      {{ range site.Taxonomies.categories.ByCount }}
+        <li><a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><span>{{ .Count }}</span></a></li>
+      {{ end }}
+    </ul>
+  </section>
+  <section class="sidebar-card">
+    <h2>Tags</h2>
+    <div class="tag-list">{{ range site.Taxonomies.tags.Alphabetical }}<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>{{ end }}</div>
+  </section>
+</aside>

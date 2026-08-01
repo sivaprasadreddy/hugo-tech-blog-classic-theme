@@ -1,0 +1,11 @@
+.idea
+*.iml
+.DS_Store
+.hugo_build.lock
+.obsidian
+.vscode
+.zed
+public/
+build/
+resources/
+exampleSite/public/

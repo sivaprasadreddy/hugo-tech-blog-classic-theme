@@ -1,0 +1,41 @@
+baseURL = "http://0.0.0.0:1313/"
+locale = "en-us"
+title = "SivaLabs"
+theme = "hugo-tech-blog-classic-theme"
+
+[pagination]
+  pagerSize = 6
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "Exploring Java, Spring Boot, Microservices, and Cloud-Native technologies."
+  author = "Siva Prasad"
+  authorBio = "Software Engineer and Tech Enthusiast. I write about Java, Spring Boot, Microservices, and Cloud-Native technologies."
+  email = "contact@sivalabs.com"
+  location = "Hyderabad, India"
+  twitter = "https://twitter.com/sivalabs"
+  github = "https://github.com/sivaprasadreddy"
+  linkedin = "https://linkedin.com/in/sivaprasadreddy"
+  youtube = "https://youtube.com/sivalabs"
+
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Categories"
+  pageRef = "/categories"
+  weight = 20
+
+[[menus.main]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 30
+
+[markup.highlight]
+  noClasses = false
+  style = "github-dark"
