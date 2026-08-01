@@ -11,7 +11,7 @@
 - Simple blog and taxonomy
 
 ## Requirements
-- [Hugo](https://gohugo.io/installation/) extended edition, v0.164 or higher
+- [Install Hugo](https://gohugo.io/installation/) extended edition, v0.164 or higher
 
 ## Quick Start
 

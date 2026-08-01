@@ -5,8 +5,8 @@ description = "A clean, responsive Hugo theme for technology blogs"
 homepage = "https://github.com/sivaprasadreddy/hugo-tech-blog-classic-theme"
 min_version = "0.164.0"
 features = ["responsive", "blog", "syntax highlighting"]
-demosite = "https://book.alxs.dev"
+demosite = "https://sivaprasadreddy.github.io/hugo-tech-blog-classic-theme/"
 
 [author]
 name = "SivaLabs"
-homepage = "https://github.com/sivaprasadreddy/"
+homepage = "https://sivalabs.in"
