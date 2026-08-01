@@ -1,7 +1,9 @@
 <aside class="sidebar">
   <section class="sidebar-card">
     <h2>Search</h2>
-    <form class="search-form" action="{{ site.Home.RelPermalink }}" method="get">
+    {{ $siteURL := urls.Parse site.BaseURL }}
+    <form class="search-form" action="https://www.google.com/search" method="get">
+      <input type="hidden" name="as_sitesearch" value="{{ $siteURL.Host }}">
       <input type="search" name="q" placeholder="Search..." aria-label="Search">
       <button type="submit">Search</button>
     </form>
