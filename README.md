@@ -1,6 +1,6 @@
 # Hugo Tech Blog Classic Theme
 
-[Demo](https://sivaprasadreddy.github.io/hugo-tech-blog-classic-theme/)
+[Live Demo](https://sivaprasadreddy.github.io/hugo-tech-blog-classic-theme/)
 
 ![home-page-screenshot.png](home-page-screenshot.png)
 
