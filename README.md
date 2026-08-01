@@ -2,6 +2,8 @@
 
 [Demo](https://sivaprasadreddy.github.io/hugo-tech-blog-classic-theme/)
 
+![home-page-screenshot.png](home-page-screenshot.png)
+
 ## Features
 
 - Clean simple design
